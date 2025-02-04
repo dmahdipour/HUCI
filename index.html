@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chance Flip</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="md:max-w-xl mx-auto p-2 min-h-screen bg-gray-900">
+
+    <div class="md:max-w-xl mx-auto flex flex-row justify-between items-center mb-2 p-2 px-4 bg-slate-800 rounded-lg">
+            <div class="flex items-center gap-4">
+                <img class="w-10 h-10 rounded-full" src="../assets/CR7" alt="#">
+                <div class="font-medium text-white text-sm">
+                    <div>Cristiano Ronaldo</div>
+                    <div class="text-xs text-gray-500">Joined in August 2014</div>
+                </div>
+            </div>
+
+            <button type="button" class="relative inline-flex items-center p-2 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-800">
+                <svg class="w-6 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                    <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/><path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                </svg>
+                <span class="sr-only">Notifications</span>
+                <span class="absolute inline-flex items-center justify-center w-5 h-5 text-[10px] text-white bg-red-500 rounded-full -top-2 -end-2">
+                20
+            </span>
+            </button>
+        </div>
+
+    <div class="md:max-w-xl mx-auto overflow-x-auto whitespace-nowrap gap-4 grid grid-cols-4 text-center">
+        <div class="inline-block">
+            <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-purple-600 bg-transparent group text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 w-32">
+                <img class="w-8 h-8 rounded-full" src="../assets/dice.png" alt="">
+                <span class="relative text-[10px] transition-all ease-in duration-75">Type</span>
+            </button>
+        </div>
+        <div class="inline-block">
+            <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-cyan-500 bg-transparent group text-white hover:bg-gradient-to-br from-cyan-500 to-blue-500 w-32">
+                <img class="w-8 h-8 rounded-full" src="../assets/sudoku.png" alt="">
+                <span class="relative text-[10px] transition-all ease-in duration-75">Public</span>
+            </button>
+        </div>
+        <div class="inline-block">
+            <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-green-400 bg-transparent group text-white hover:bg-gradient-to-br from-green-400 to-blue-600 w-32">
+                <img class="w-8 h-8 rounded-full" src="../assets/angri%20birds.png" alt="">
+                <span class="relative text-[10px] transition-all ease-in duration-75">Developer</span>
+            </button>
+        </div>
+        <div class="inline-block">
+            <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-purple-500 bg-transparent group text-white hover:bg-gradient-to-br from-purple-500 to-pink-500 w-32">
+                <img class="w-8 h-8 rounded-full" src="../assets/chess.png" alt="">
+                <span class="relative text-[10px] transition-all ease-in duration-75">Producer</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="md:max-w-xl mx-auto relative w-full pt-5 bg-gray-900 rounded-xl overflow-hidden shadow-xl text-center mb-12">
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-gradient-to-tr from-teal-400 to-blue-600 opacity-50 blur-3xl"></div>
+            <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-br from-purple-500 to-pink-600 opacity-50 blur-3xl"></div>
+
+            <div class="relative flex flex-col items-center justify-between h-full z-10">
+
+                <div class="relative text-white text-5xl font-extrabold flex">
+                    <span class="transform rotate-16">H</span>
+                    <span class="text-teal-300 -ml-3 transform -rotate-12">I</span>
+                    <span class="text-red-300 -ml-3 transform -rotate-12">V</span>
+                    <span class="text-green-300 -ml-3 transform -rotate-12">E</span>
+                </div>
+
+                <div class="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-500 mt-4 mb-2"></div>
+
+                <div class="text-center mb-0">
+                    <span class="text-white text-2xl font-bold">2,000 </span>
+                    <span class="text-gray-400 text-xs tracking-widest">TOKEN</span>
+                </div>
+
+                <div id="image-container" class="mb-2">
+                    <img id="random-image" src="" alt="" class="h-44 w-44">
+                </div>
+
+                <div class="relative flex items-center justify-center p-2 bg-slate-800 rounded-lg shadow-md border border-gray-700 w-32">
+                    <button class="w-full gap-2 text-white text-base font-semibold">
+                        Play
+                    </button>
+                </div>
+
+                <div class="w-full h-16 md:max-w-xl mx-auto relative text-center p-1 flex flex-col items-center justify-center my-4 gap-1">
+                    <div class="text-center text-white text-xs">Championship Cup: 0</div>
+                    <div class="relative flex flex-row items-center z-10 justify-center gap-1">
+                        <div class="timer rounded-lg shadow-md py-1 flex items-center justify-center flex-col aspect-square px-1 h-10 bg-slate-800 border-gray-700 w-32">
+                            <button class="text-xs font-Cormorant font-normal text-indigo-400 text-center w-full gap-2">Animation</button>
+                        </div>
+                        <div class="timer rounded-lg shadow-md py-1 flex items-center justify-center flex-col aspect-square px-1 h-10 bg-slate-800 border-gray-700 w-32">
+                            <button class="text-xs font-Cormorant font-normal text-indigo-400 text-center w-full">Music</button>
+                        </div>
+                        <div class="timer rounded-lg shadow-md py-1 flex items-center justify-center flex-col aspect-square px-1 h-10 bg-slate-800 border-gray-700 w-32">
+                            <button class="text-xs font-Cormorant font-normal text-indigo-400 text-center w-full">Photo, etc</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative md:max-w-lg flex items-center justify-center w-full h-16 bg-neutral-900 text-white rounded shadow-md p-6">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-lg"></div>
+                    <div class="relative z-10 text-center px-4 flex flex-row items-center justify-center gap-2">
+                        <p class="text-sm tracking-widest text-gray-400">
+                            <span class="text-lg text-red-300 font-bold">H</span>uman <span class="text-lg text-red-300 font-bold">I</span>nteractive <span class="text-lg text-red-300 font-bold">V</span>alue <span class="text-lg text-red-300 font-bold">E</span>xtraction  
+                        </p>
+                    </div>
+                    <div class="absolute top-15 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-lg"></div>
+
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-700 via-transparent to-blue-700 opacity-10 rounded-lg"></div>
+                    <div class="absolute w-32 h-32 bg-blue-500 rounded-full blur-3xl opacity-20 animate-[pulse_6s_infinite] -bottom-5 -left-5"></div>
+                    <div class="absolute w-24 h-24 bg-purple-500 rounded-full blur-3xl opacity-20 animate-[pulse_8s_infinite] -top-5 -right-5"></div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    <div class="md:max-w-xl mx-auto fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 w-full h-16 bg-slate-800 border-t border-gray-600">
+
+            <div class="grid h-full grid-cols-5 mx-auto font-medium">
+                <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-slate-800 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 mb-1 text-blue-400 group-hover:text-blue-700">
+                        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"/>
+                        <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"/>
+                    </svg>
+                    <span class="text-sm text-gray-400 group-hover:text-blue-700">Home</span>
+                </button>
+                <button type="button" class="inline-flex flex-col items-center justify-center px-2 hover:bg-slate-800 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 mb-1 text-blue-400 group-hover:text-blue-700">
+                        <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
+                        <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
+                        <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />                          
+                    </svg>
+                    <span class="text-sm text-gray-400 group-hover:text-blue-700">Basic Principle</span>
+                </button>
+                <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-slate-800 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 mb-1 text-blue-400 group-hover:text-blue-700">
+                        <path fill-rule="evenodd"
+                              d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+                              clip-rule="evenodd"/>
+                        <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z"/>
+                    </svg>
+                    <span class="text-sm text-gray-400 group-hover:text-blue-700">Friends</span>
+                </button>
+                <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-slate-800 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="size-6 mb-1 text-blue-400 group-hover:text-blue-700">
+                        <path d="M236,208a12,12,0,0,1-12,12H32a12,12,0,0,1-12-12V48a12,12,0,0,1,24,0v99l43.51-43.52a12,12,0,0,1,17,0L128,127l43-43H160a12,12,0,0,1,0-24h40a12,12,0,0,1,12,12v40a12,12,0,0,1-24,0V101l-51.51,51.52a12,12,0,0,1-17,0L96,129,44,181v15H224A12,12,0,0,1,236,208Z"></path>
+                    </svg>
+                    <span class="text-sm text-gray-400 group-hover:text-blue-700">Incomes</span>
+                </button>                
+                <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-slate-800 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 mb-1 text-blue-400 group-hover:text-blue-700">
+                        <path d="M14.234 16.014l.554-1.104c.808-1.61.897-3.228.253-4.552-.122-.252-.277-.479-.443-.693 1.411-.619 2.402-2.026 2.402-3.664 0-2.206-1.794-4-4-4s-4 1.794-4 4c0 .783.234 1.508.624 2.126-1.696.33-2.806 1.248-2.947 1.375-.716.631-.885 1.68-.405 2.504.324.559.886.909 1.494.98l-.554 1.104c-.808 1.61-.897 3.228-.254 4.552.565 1.164 1.621 1.955 2.972 2.229.413.084.836.127 1.254.127 2.368 0 3.965-1.347 4.14-1.501.716-.63.887-1.678.407-2.503-.325-.556-.887-.909-1.497-.98zm-1.234-12.013c1.104 0 2 .896 2 2s-.896 2-2 2c-1.105 0-2-.896-2-2s.895-2 2-2zm-1.816 14.999c-.271 0-.559-.025-.854-.087-1.642-.334-2.328-1.933-1.328-3.927l1-1.995c.5-.996.47-1.63-.108-2.035-.181-.125-.431-.169-.689-.169-.577 0-1.201.214-1.201.214s1.133-1.001 2.812-1.001c.271 0 .56.025.856.087 1.64.334 2.328 1.933 1.328 3.927l-1 1.993c-.5.998-.472 1.632.106 2.035.181.126.433.169.692.169.577 0 1.2-.212 1.2-.212s-1.133 1.001-2.814 1.001z"></path>
+                    </svg>
+                    <span class="text-sm text-gray-400 group-hover:text-blue-700">Info</span>
+                </button>
+            </div>
+        </div>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script>
+        // count-down timer
+        let dest = new Date("dec 28, 2024 10:00:00").getTime();
+        let x = setInterval(function () {
+            let now = new Date().getTime();
+            let diff = dest - now;
+
+            // Check if the countdown has reached zero or negative
+            if (diff <= 0) {
+                clearInterval(x); // Stop the countdown
+                return; // Exit the function
+            }
+
+            let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            if (days < 10) {
+                days = `0${days}`;
+            }
+            if (hours < 10) {
+                hours = `0${hours}`;
+            }
+            if (minutes < 10) {
+                minutes = `0${minutes}`;
+            }
+            if (seconds < 10) {
+                seconds = `0${seconds}`;
+            }
+
+// Get elements by class name
+            let countdownElements = document.getElementsByClassName("countdown-element");
+
+// Loop through the elements and update their content
+            for (let i = 0; i < countdownElements.length; i++) {
+                let className = countdownElements[i].classList[1]; // Get the second class name
+                switch (className) {
+                    case "days":
+                        countdownElements[i].innerHTML = days;
+                        break;
+                    case "hours":
+                        countdownElements[i].innerHTML = hours;
+                        break;
+                    case "minutes":
+                        countdownElements[i].innerHTML = minutes;
+                        break;
+                    case "seconds":
+                        countdownElements[i].innerHTML = seconds;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }, 1000);
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = [
+				'../assets/Zodiac1-1.png'
+            ];
+
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const randomImageSrc = images[randomIndex];
+
+            document.getElementById('random-image').src = randomImageSrc;
+        });
+    </script>
+
+</body>
+</html>

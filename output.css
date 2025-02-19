@@ -1227,6 +1227,9 @@ input:checked + .toggle-bg {
   margin-top: 1rem;
 }
 
+.ml-12{
+  margin-left:3rem;
+}
 .block {
   display: block;
 }

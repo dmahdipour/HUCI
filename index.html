@@ -28,35 +28,29 @@
             </button>
         </div>
 
-    <div class="md:max-w-xl mx-auto overflow-x-auto whitespace-nowrap gap-4 grid grid-cols-4 text-center">
-        <div class="inline-block">
-            <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-purple-600 bg-transparent group text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 w-16">
-                <img class="w-8 h-8 rounded-full" src="./assets/Type.png" alt="">
-                <span class="relative text-[10px] transition-all ease-in duration-75">Type</span>
-            </button>
-        </div>
-        <div class="inline-block">
-            <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-cyan-500 bg-transparent group text-white hover:bg-gradient-to-br from-cyan-500 to-blue-500 w-16">
-                <img class="w-8 h-8 rounded-full" src="./assets/Public.png" alt="">
-                <span class="relative text-[10px] transition-all ease-in duration-75">Public</span>
-            </button>
-        </div>
-        <div class="inline-block">
-            <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-green-400 bg-transparent group text-white hover:bg-gradient-to-br from-green-400 to-blue-600 w-16">
-                <img class="w-8 h-8 rounded-full" src="./assets/developer.png" alt="">
-                <span class="relative text-[10px] transition-all ease-in duration-75">Developer</span>
-            </button>
-        </div>
-        <div class="inline-block">
-            <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-purple-500 bg-transparent group text-white hover:bg-gradient-to-br from-purple-500 to-pink-500 w-16">
-                <img class="w-8 h-8 rounded-full" src="./assets/Producer.png" alt="">
-                <span class="relative text-[10px] transition-all ease-in duration-75">Producer</span>
-            </button>
-        </div>
-    </div>
+    	<div class="md:max-w-xl mx-auto overflow-x-auto whitespace-nowrap gap-4 grid grid-cols-4 text-left bg-gray-900 rounded-lg p-2">
+            <span class="relative text-l transition-all ease-in duration-75 text-white font-bold">Type:</span>
+		<div class="inline-block">
+		    <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-cyan-500 bg-transparent group text-white hover:bg-gradient-to->
+			<!--img class="w-8 h-8 rounded-full" src="./assets/Public.png" alt=""-->
+			<span class="relative text-[10px] transition-all ease-in duration-75">Public</span>
+		    </button>
+		</div>
+		<div class="inline-block">
+		    <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-green-400 bg-transparent group text-white hover:bg-gradient-to>
+			<!--img class="w-8 h-8 rounded-full" src="./assets/developer.png" alt=""-->
+			<span class="relative text-[10px] transition-all ease-in duration-75">Developer</span>
+		    </button>
+		</div>
+		<div class="inline-block">
+		    <button class="relative inline-flex items-center justify-center p-2 mb-2 overflow-hidden text-sm font-medium rounded-lg border border-purple-500 bg-transparent group text-white hover:bg-gradient-t>
+			<!--img class="w-8 h-8 rounded-full" src="./assets/Producer.png" alt=""-->
+			<span class="relative text-[10px] transition-all ease-in duration-75">Producer</span>
+		    </button>
+		</div>
+	</div>
 
-
-    <div class="md:max-w-xl mx-auto relative w-full pt-5 bg-gray-900 rounded-xl overflow-hidden shadow-xl text-center mb-12">
+        <div class="md:max-w-xl mx-auto relative w-full pt-5 bg-gray-900 rounded-xl overflow-hidden shadow-xl text-center mb-12">
             <div class="absolute -top-10 -left-10 w-40 h-40 bg-gradient-to-tr from-teal-400 to-blue-600 opacity-50 blur-3xl"></div>
             <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-br from-purple-500 to-pink-600 opacity-50 blur-3xl"></div>
 
@@ -72,8 +66,8 @@
                 <div class="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-500 mt-4 mb-2"></div>
 
                 <div class="text-center mb-0">
-                    <span class="text-white text-2xl font-bold">2,000 </span>
-                    <span class="text-gray-400 text-xs tracking-widest">TOKEN</span>
+                    <span class="text-gray-400 text-xs tracking-widest">TOKEN: </span>
+		    <span class="text-white text-2xl font-bold">0 </span>                    
                 </div>
 
                 <div id="image-container" class="mb-2">
@@ -87,7 +81,7 @@
                 </div>
 
                 <div class="w-full h-16 md:max-w-xl mx-auto relative text-center p-1 flex flex-col items-center justify-center my-4 gap-1">
-                    <div class="text-center text-white text-xs">Championship Cup: 0</div>
+                    <div class="text-center text-white text-xs">Score: 2,000</div>
                     <div class="relative flex flex-row items-center z-10 justify-center gap-1">
                         <div class="timer rounded-lg shadow-md py-1 flex items-center justify-center flex-col aspect-square px-1 h-10 bg-slate-800 border-gray-700 w-32">
                             <button class="text-xs font-Cormorant font-normal text-indigo-400 text-center w-full gap-2">Animation</button>
@@ -136,7 +130,7 @@
                         <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
                         <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />                          
                     </svg>
-                    <span class="text-sm text-gray-400 group-hover:text-blue-700">Basic Principle</span>
+                    <span class="text-sm text-gray-400 group-hover:text-blue-700">BasicPrinciple</span>
                 </button>
                 <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-slate-800 group">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 mb-1 text-blue-400 group-hover:text-blue-700">

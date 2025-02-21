@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humans Cipher</title>
     <link rel="stylesheet" href="output.css">
@@ -10,9 +11,9 @@
 
     <div class="md:max-w-xl mx-auto flex flex-row justify-between items-center mb-2 p-2 px-4 bg-slate-800 rounded-lg">
             <div class="flex items-center gap-4">
-                <img class="w-10 h-10 rounded-full" src="./assets/CR7" alt="#">
+                <img id="userPhoto" class="w-10 h-10 rounded-full" src="" alt="#">
                 <div class="font-medium text-white text-sm">
-                    <div>Cristiano Ronaldo</div>
+                    <div id="userID">Cristiano Ronaldo</div>
                     <div class="text-xs text-gray-500">Joined in August 2014</div>
                 </div>
             </div>
@@ -23,7 +24,7 @@
                 </svg>
                 <span class="sr-only">Notifications</span>
                 <span class="absolute inline-flex items-center justify-center w-5 h-5 text-[10px] text-white bg-red-500 rounded-full -top-2 -end-2">
-                20
+               <span id="notID"> </span>
             </span>
             </button>
         </div>
@@ -218,6 +219,7 @@
             }
         }, 1000);
     </script>
+<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const images = [
@@ -228,6 +230,28 @@
             const randomImageSrc = images[randomIndex];
 
             document.getElementById('random-image').src = randomImageSrc;
+	    document.getElementById('notID').innerText='34';
+    
+// User Init Data
+//	    secret_key = HMAC_SHA256("233935395:AAGlA52RnM74d_H3HKCaj4RBi37Oah5FqAc", "WebAppData");
+//	    if (hex(HMAC_SHA256(data_check_string, secret_key)) == hash) {
+//		alert("data is from Telegram");
+//	    }
+
+	    const initData = new URLSearchParams(window.Telegram.WebApp.initData);
+	    const user = JSON.parse(initData.get('user'));
+	    const userId = user.id;
+	    const userName = user.username;
+	    const userPhoto = user.photo_url;
+ 	    //alert(userId);
+	    if(userName){
+	    	document.getElementById('userID').innerText=userName;
+	    }else{
+		document.getElementById('userID').innerText=userId;
+	    }
+	    if(userPhoto){
+		document.getElementById('userPhoto').src=userPhoto;
+	    }
         });
     </script>
 
